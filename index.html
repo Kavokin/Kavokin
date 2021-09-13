@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+        	<meta charset="utf-8"/>
+        	<title>Кавокин В,1-ый веб</title>
+        </head>
+		<body>
+		<ol>
+	<li><a id="top">Вверх страницы</a></li>
+	<li><a href="http://example.com">Главная страница Example</a></li>
+	<li><a href="https://example.com">Главная страница Example https</a></li>
+	<li><a href="ftp://example.com/Manhattan.txt">Ссылка на файл без авторизации</a></li>
+	<li><a href="ftp://papabear:linkoln@example.com/Pacific.txt">Ссылка на файл с афторизацией</a></li>
+	<li><a href="http://kubsu.ru/ru/fktipm#main-content">Перейти к основному содержанию</a></li>
+	<li><a href="#top">Хочу в верх</a></li>
+	<li><a href="https://example.com?name=ivan&age=18">Ссылка с двумя параметрами в URL</a></li>
+	<li><ul>
+	<li><a href="history.html" title="История создания танка">История</a></li>
+	<li><a href="gun.html" title="Главное орудие">Вооружение</a></li>
+	<li><a href="enginie.html" title="Двигатель">Силовая установка</a></li>
+	</ul></li>
+	<li><a>Ссылка без href</a></li>
+	<li><a href="">Ссылка с пустым href</a></li>
+	<li><a href="http://example.com" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+        <li><a href="http://example.com" rel="noindex">Ссылка запрещенная для индексации поисковиками</a></li>
+	<li><p> V значит вендетта, вот <a href="https://test.com"> контекстная ссылка</a></li>
+	<li>Фото с ссылкой<br/><a href="http://test.com"><img src="123.jpg" width="300" height="533" alt="Студент обыкновенный"></a></li>
+	<li>Фото без ссылки но с html-тегом<br/><img src="123.jpg" width="533" height="300" usemap="#student" alt="Студентик"></li>	
+	<li><a href="ProjectX.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+        <li><a href="about/answers.html">Относительная ссылка на страницу в текущем каталоге about</a></li>
+        <li><a href="../qestions.html">Относительная ссылка на страницу в каталоге уровнем выше текущего </a></li>
+        <li><a href="../../designer.html">Относительная ссылка на страницу в каталоге двумя уровнями выше</a></li>
+        <li><a href="/mainland">Сокращенная ссылка на главную</a></li>
+        <li><a href="/society">Сокращенная ссылка на внутреннюю</a></li>
+	</ol>
+	<map name="student">
+            <area shape="rect" coords="0,0,30,300" href="http://testing.com" alt="ссылка"/>
+            <area shape="rect" coords="0,0,533,10" href="http://testing.com" alt="ссылка"/>
+	</map>
+
+	<form action="/"
+      	method="POST">
+            <label>
+                Имя:<br/>
+                <input name="username" value="Введите ваше Имя"/>
+            </label><br/>
+            <label>
+                Email:<br/>
+                <input name="Email" value="Ваша@почта.введите" type="email"/>
+            </label><br>
+            <label>
+                Дата рождения:<br/>
+                <input name="birthday" value="1986-04-26" type="date"/> 
+            </label><br/>
+            Пол:<br/>
+            <label> 
+                <input type="radio" checked="checked" name="gen" value="Male"/>
+                Мужской
+            </label><br/>
+            <label> 
+                <input type="radio" checked="checked" name="gen" value="Female"/>
+                Женский
+            </label><br/>
+            Количетсво конечностей:<br/>
+            <label>
+                <input type="radio" checked="checked" name="numbers" value="4"/>
+                Я целый!
+            </label><br/>  
+            <label>
+                <input type="radio" checked="checked" name="numbers" value="2"/>
+                Нет ножек(
+            </label><br/>  
+            <label>
+                <input type="radio" checked="checked" name="numbers" value="2"/>
+                Нет ручек(
+            </label><br/>  
+            <label>
+                <input type="radio" checked="checked" name="numbers" value="1"/>
+                Я гусеница!
+            </label><br/> 
+            <label>
+                Сверхспособности:<br/>
+                <select name="skills">
+                    <option value="UnDead">Бессмертие</option>
+                    <option value="Walls">Прохождение сковзь стены</option>
+                    <option value="lev">Левитация</option>
+                </select>
+            </label><br/>
+            <label>
+                Поведай миру свою историю<br/>
+                <textarea name="biography">Всё началось жарким летним днём</textarea>
+            </label><br/>
+
+            <label>
+                <input type="checkbox" checked="checked" name="check-alice"/>
+		С контрактом ознакомлен(а)<br/>
+            </label>
+            <br>
+            <input type="submit" value="Отправить" id="send-button"/>
+        </form>
+	</body>
+</html>
