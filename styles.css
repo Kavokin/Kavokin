@@ -1,3 +1,12 @@
+.first_flex_conteiner{
+ display: flex; 
+justify-content: space-between;
+flex-direction: row;
+background-color:#4B0082;
+padding 5px;
+lign-items:center;
+max-width:100%;}
+.img_logo{
 padding 10px;
 flex:1;
 margin-left:5px;
