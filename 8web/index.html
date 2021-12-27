@@ -1,33 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Кавокин В 8-ой веб</title>
+  <meta http-equiv='content-Type' content='text/html; charset=UTF-8'>
+  <link rel="stylesheet" href="style.css">
+  <title>Задание 8</title>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
+    <form action="#" class="forma">
+      <button onclick="show('block')" class="btn third">Отправить сообщение</button>
+    </form>
 
-    <a href="#" class="js-open-modal" data-modal="1"> Открыть форму  </a>
-    <div class="modal" data-modal="1">
-        <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-        <form id="my-formcarry" accept-charset="UTF-8" class="main">
-            <input type="text" name="name" placeholder="Введите имя" required>
-            <input type="email" name="email" id="" placeholder="Введите почту" required>
-            <input type="text" name="message" id="" placeholder="Сообщение">
-            <label><input type="checkbox" name="checkbox" id="" >Согласие на обработку персональных данных</label>
-            <input type="submit" value="Отправить">
-        </form>
+  <div  onclick="show('none')" id="gray"></div>
+  <div id="window">
+    <button onclick="show('none')">Вернуться</button>
 
+    <div class="form">
+      <h2>Отправить сообщение</h2>
+      <form action="https://formcarry.com/s/BywEPAJNb" method="POST" enctype="multipart/form-data">
+
+          Имя: <input type="text" placeholder="Иван" name="Name" required><br>
+          Почта:<input type="email" placeholder="E-Mail" name="E-Mail" required><br>
+          Ваш вопрос:<textarea name="Komment" placeholder="вопрос"></textarea><br>
+          <br>
+
+          <input type="submit" value="Отправить" name="Button"> <br>Разрешаю обработку своих персональных данных
+          <input type="checkbox" required>
+      </form>
     </div>
+  </div>
 
-    <div class="overlay js-overlay-modal"></div>
+  <script>
+    function show(state)
+    {
+      document.getElementById('window').style.display = state;
+      document.getElementById('gray').style.display = state;
+    }
+  </script>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://carrier.formcarry.com/js/v1.js"></script>
-    <script src="main.js"></script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv='content-Type' content='text/html; charset=UTF-8'>
+  <link rel="stylesheet" href="style.css">
+  <title>Задание 8</title>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <form action="#" class="forma">
+      <button onclick="show('block')" class="btn third">Отправить сообщение</button>
+    </form>
+
+  <div  onclick="show('none')" id="gray"></div>
+  <div id="window">
+    <button onclick="show('none')">Вернуться</button>
+
+    <div class="form">
+      <h2>Отправить сообщение</h2>
+      <form action="https://formcarry.com/s/BywEPAJNb" method="POST" enctype="multipart/form-data">
+
+          Имя: <input type="text" placeholder="Иван" name="Name" required><br>
+          Почта:<input type="email" placeholder="E-Mail" name="E-Mail" required><br>
+          Ваш вопрос:<textarea name="Komment" placeholder="вопрос"></textarea><br>
+          <br>
+
+          <input type="submit" value="Отправить" name="Button"> <br>Разрешаю обработку своих персональных данных
+          <input type="checkbox" required>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function show(state)
+    {
+      document.getElementById('window').style.display = state;
+      document.getElementById('gray').style.display = state;
+    }
+  </script>
+
 </body>
 
 </html>
