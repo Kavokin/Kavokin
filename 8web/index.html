@@ -1,41 +1,33 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta http-equiv='content-Type' content='text/html; charset=UTF-8'>
   <link rel="stylesheet" href="style.css">
   <title>Задание 8</title>
-  
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-
 <body>
     <form action="#" class="forma">
       <button onclick="show('block')" class="btn third">Отправить сообщение</button>
     </form>
-
   <div  onclick="show('none')" id="gray"></div>
   <div id="window">
     <button onclick="show('none')">Вернуться</button>
-
     <div class="form">
       <h2>Отправить сообщение</h2>
       <form action="https://formcarry.com/s/BywEPAJNb" method="POST" enctype="multipart/form-data">
-
           Имя: <input type="text" placeholder="Иван" name="Name" required><br>
           Почта:<input type="email" placeholder="E-Mail" name="E-Mail" required><br>
           Ваш вопрос:<textarea name="Komment" placeholder="вопрос"></textarea><br>
           <br>
-
           <input type="submit" value="Отправить" name="Button"> <br>Разрешаю обработку своих персональных данных
           <input type="checkbox" required>
       </form>
     </div>
   </div>
-
   <script>
     function show(state)
     {
@@ -43,58 +35,5 @@
       document.getElementById('gray').style.display = state;
     }
   </script>
-
 </body>
-
 </html>
-
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta http-equiv='content-Type' content='text/html; charset=UTF-8'>
-  <link rel="stylesheet" href="style.css">
-  <title>Задание 8</title>
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <form action="#" class="forma">
-      <button onclick="show('block')" class="btn third">Отправить сообщение</button>
-    </form>
-
-  <div  onclick="show('none')" id="gray"></div>
-  <div id="window">
-    <button onclick="show('none')">Вернуться</button>
-
-    <div class="form">
-      <h2>Отправить сообщение</h2>
-      <form action="https://formcarry.com/s/BywEPAJNb" method="POST" enctype="multipart/form-data">
-
-          Имя: <input type="text" placeholder="Иван" name="Name" required><br>
-          Почта:<input type="email" placeholder="E-Mail" name="E-Mail" required><br>
-          Ваш вопрос:<textarea name="Komment" placeholder="вопрос"></textarea><br>
-          <br>
-
-          <input type="submit" value="Отправить" name="Button"> <br>Разрешаю обработку своих персональных данных
-          <input type="checkbox" required>
-      </form>
-    </div>
-  </div>
-
-  <script>
-    function show(state)
-    {
-      document.getElementById('window').style.display = state;
-      document.getElementById('gray').style.display = state;
-    }
-  </script>
-
-</body>
-
-</html>
-
